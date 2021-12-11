@@ -94,11 +94,7 @@ p {
 img {
   max-width: 100;
 }
-@media (max-width: 700px) {
-  .project-preview {
-    display: none;
-  }
-}
+
 .btn-style {
   border-radius: 4px;
   padding: 20px 15px;
@@ -107,4 +103,25 @@ img {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+@media (max-width: 500px) {
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .project-preview {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .btn-style {
+    display: block;
+    margin: 0 20px;
+    padding: 20px 60px;
+  }
 }
